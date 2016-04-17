@@ -1,0 +1,39 @@
+/*<!-- ***************************************************************************************
+  Author     : Edel Benavides
+  Course     : WEB-3
+  URL        : ocelot.aul.fiu.edu/~ebena010
+  Professor  : Michael Robinson 
+  Program #  : Program 1
+               Creating a website using HTML, tables, paragraphs, breaks, CSS, forms, and PHP
+
+  Due Date   : 02/04/2016 
+  Certification: 
+  I hereby certify that this work is my own and none of it is the work of any other person. 
+
+  ..........{ your signature }..........
+
+**************************************************************************************** -->*/
+
+
+
+/*PIC*/
+.pic:hover
+{
+	cursor: pointer;
+}
+
+
+/*B&W*/
+.bw
+{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.bw:hover
+{
+	-webkit-filter: grayscale(100%);
+}

@@ -1,0 +1,85 @@
+		<!-- ***************************************************************************************
+		  Author     : Edel Benavides
+		  Course     : WEB-3
+		  URL        : ocelot.aul.fiu.edu/~ebena010
+		  Professor  : Michael Robinson 
+		  Program #  : Program 1
+					   Creating a website using HTML, tables, paragraphs, breaks, CSS, forms, and PHP
+
+		  Due Date   : 02/04/2016 
+		  Certification: 
+		  I hereby certify that this work is my own and none of it is the work of any other person. 
+
+		  ..........{ your signature }..........
+
+		**************************************************************************************** -->
+
+
+
+		<!--Style for picture zoom effect-->
+		<style>
+			#check:checked ~ label #cover
+			{
+				display:block;
+			}
+			#cover
+			{
+				position:fixed;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				background:rgba(0,0,0,0.85);
+				display:none;
+			}
+			#box
+			{
+				position:absolute;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				margin:auto;
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+		<!--Style for links-->
+		<style>
+			/*Telephone link hover effect*/
+			.tel_link a:link {color: #71db71;}
+			.tel_link a:hover {color: #33cc33;}
+			
+			/*Telephone link hover effect*/
+			.email_link a:link {color: #66b2ff;}
+			.email_link a:hover {color: #3399ff;}
+			
+			.font1{font-family:garamond; font-size:45px}
+			.font2{font-family:courier; font-size:25px}
+			.font3{font-family:verdana light; font-size:30px}
+		</style>
+
+		<!--Circle Photo-->
+		</br>
+		<div align="center">
+			<input type="checkbox" id="check" style="display:none;">
+			<label for="check">
+				<img src="../images/me-circle.png" width="250px">
+			</label>
+			<label for="check">
+				<div id="cover">
+					<div id="box">
+						<img src="../images/me-circle.png" width="400">
+					</div>
+				</div>
+			</label>
+		</div>
+		
+		<font align="center" color="white">
+			<p align="center">
+				<font class="font1">Edel Benavides</br></font>
+				<font class="font2 tel_link">&#9742 <a href="tel:786-333-1577">786-333-1577</a></br></font>
+				<font class="font3 email_link">&#9993 <a href="mailto:EdelBenavidesPhotography@gmail.com">EdelBenavidesPhotography@gmail.com</a></font>
+			</p>
+		</font>

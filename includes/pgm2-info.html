@@ -1,0 +1,237 @@
+		<!-- ***************************************************************************************
+		  Page Name  : pgm2-info.html
+		  Author     : Edel Benavides
+		  URL        : ocelot.aul.fiu.edu/~ebena010
+		  Course     : WEB-3 CGS 4854 TuTh 7:50PM - 9:05PM
+		  Program #  : Program 2
+		  Purpose    : Includes page. Creates the form to be used in pgm2.php
+
+		  Due Date   : 02/18/2016 
+		  Certification: 
+		  I hereby certify that this work is my own and none of it is the work of any other person. 
+
+		  
+		  ..........{ your signature }..........
+
+		**************************************************************************************** -->
+
+		
+		<?php session_start(); ?>
+
+		<style>
+			#t_input {padding: 5px; width: 800px;}
+			#td_left {width: 250px; text-align: left;}
+			#td_right {width: 450px; text-align: left;}
+
+			input[type=text]
+			{
+				width: 400px; padding: 10px;
+				border: 1px solid #cccccc;
+				border-radius: 5px; font-size:20px;
+			}
+			
+			select
+			{
+				width: 200px; padding: 10px;
+				border: 1px solid #cccccc;
+				border-radius: 5px; font-size:20px;
+			}
+
+			input[type=radio], input[type=checkbox]
+			{
+				width: 30px; height: 20px; cursor: pointer;
+			}
+			
+			input[type=submit], input[type=reset]
+			{
+				background-color: #4caf50;
+				color: white; font-size: 25px;
+				padding: 10px 20px;	margin: 10px;
+				border: none; border-radius: 5px;
+				cursor: pointer; width: 120px;
+			}
+
+			input[type=submit]:hover {background-color: #45a049;}
+			input[type=reset]:hover {background-color: #45a049;}
+			
+			.c_font{color:white; font-family:courier; font-size: 25px;}
+			
+			.box
+			{
+				border-radius: 10px;
+				background: rgba(255,255,255,0.10); /*white*/
+				padding: 10px; color:white;
+				width: 800px;
+			}
+			
+			.txt_area {font-size:20px;}
+		</style>
+
+
+
+		<br>
+		<div align="center">
+			<form action="controller.php" method="post" class="box">
+				<font class="c_font">
+				
+					<font style="font-size:30px">Please Input Your Information</font>
+					<br>
+				
+					<hr>
+					
+					<!--Four Text Input-->
+					<table id="t_input">
+						<!--Row 1-->
+						<tr>
+							<!--Left Column-->
+							<td id="td_left">
+								<table><tr><td>First Name</td></tr></table>
+							</td>
+							
+							<!--Right Column-->
+							<td id="td_right">
+								<input type="text" name="firstName">
+							</td>
+						</tr>
+
+						<!--Row 2-->
+						<tr>
+							<!--Left Column-->
+							<td id="td_left">
+								<table><tr><td>Last Name</td></tr></table>
+							</td>
+							
+							<!--Right Column-->
+							<td id="td_right">
+								<input type="text" name="lastName">
+							</td>
+						</tr>
+
+						<!--Row 3-->
+						<tr>
+							<!--Left Column-->
+							<td id="td_left">
+								<table><tr><td>&#9742 Telephone</td></tr></table>
+							</td>
+							
+							<!--Right Column-->
+							<td id="td_right">
+								<input type="text" name="phone">
+							</td>
+						</tr>
+						
+						<!--Row 4-->
+						<tr>
+							<!--Left Column-->
+							<td id="td_left">
+								<table><tr><td>&#9993 Email</td></tr></table>
+							</td>
+							
+							<!--Right Column-->
+							<td id="td_right">
+								<input type="text" name="email">
+							</td>
+						</tr>					
+					</table>
+					
+					
+					<!--Gender DropDown Menu-->
+					<br>
+					<table id="t_input">
+						<tr>
+							<!--Left Column-->
+							<td id="td_left">
+								Gender 
+							</td>
+							
+							<!--Right Column-->
+							<td id="td_right">
+								<select name="gender" size="1">
+										<option selected value="">Select Gender</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+					
+					
+					<!--Age Radio Buttons-->
+					<br>
+					<table id="t_input">
+						<!--Row 1-->
+						<tr>
+							<td id="td_left">Age</td>
+							<td width="155px"><input type="radio" name="age" value="Under 20">Under 20</td>
+							<td width="160px"><input type="radio" name="age" value="20-60">20-30</td>
+							<td width="160px"><input type="radio" name="age" value="31-40">31-40</td>
+						</tr>
+						
+						<!--Row 2-->
+						<tr>
+							<td id="td_left"></td>
+							<td width="155px"><input type="radio" name="age" value="41-50">41-50</td>
+							<td width="160px"><input type="radio" name="age" value="51-60">51-60</td>
+							<td width="160px"><input type="radio" name="age" value="Above 60">Above 60</td>
+						</tr>
+					</table>
+					
+					
+					<!--Four Checkbox-->
+					<br>
+					<table id="t_input">
+						<!--Row 1-->
+						<tr>
+							<td id="td_left">Package</td>
+							<td width="235px"><input type="checkbox" name="basic" value="Basic"> Basic</td>
+							<td width="240px"><input type="checkbox" name="premium" value="Premium"> Premium</td>
+						</tr>
+						
+						<!--Row 2-->
+						<tr>
+							<td id="td_left"></td>
+							<td width="235px"><input type="checkbox" name="extended" value="Extended"> Extended</td>
+							<td width="240px"><input type="checkbox" name="deluxe" value="Deluxe"> Deluxe</td>
+						</tr>
+					</table>
+					
+					<!--TextArea for Comments-->
+					<br>
+					<table id="t_input">
+						<tr>
+							<!--Left Column-->
+							<td id="td_left">
+								Comments
+							</td>
+							
+							<!--Right Column-->
+							<td id="td_right">
+								<textarea name="comments" class="txt_area" rows="5" cols="35"></textarea>
+							</td>
+						</tr>
+					</table>
+					
+					<br>
+					<font style="font-size:30px">Thank you for considering <br> EDEL BENAVIDES PHOTOGRAPHY</font>
+					
+					
+					<!--Echo the message of which button was previously pressed-->
+					<br><br>
+					<?php echo $_SESSION['message2']; ?>
+					
+					
+					<!--Buttons-->
+					<br><br>			
+					<table width="700px" style="text-align:center">
+						<tr>
+							<td><input type="submit" value="Find" name="findButton"></td>
+							<td><input type="submit" value="Save" name="saveButton"></td>
+							<td><input type="submit" value="Modify" name="modifyButton"></td>
+							<td><input type="submit" value="Delete" name="deleteButton"></td>
+							<td><input type="submit" value="Clear" name="clearButton"></td>
+						</tr>
+					</table>
+				</font>
+			</form>
+			</br>
+		</div>
